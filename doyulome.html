@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #po
+    </style>
+</head>
+<body>
+<p>DO YOU LOVE ME ?</p>
+<button id="yes" onclick="onClick();">YES</button>
+<button id="no" onmouseover="onMouseOver();">NO</button>
+<script>
+    function onClick() {
+        alert("I love you so much!");
+    }
+    function onMouseOver() {
+let no = document.getElementById("no");
+let maxWidth = window.innerWidth;
+let maxHeight= window.innerHeight;
+no.style.position = "relative";
+no.style.left = "0px";
+no.style.top = "0px";
+no.style.left = Math.random() * (maxWidth - 50 - (no.style.left).replace("px",""))+"px";
+no.style.left = Math.random() * (maxHeight - 70 - (no.style.top).replace("px",""))+"px";
+    }
+</script>
+</body>
+</html>
